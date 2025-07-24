@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.converter-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.converter-container {
+  
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.converter-title {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #929292;
+}
+
+.input-section {
+  margin-bottom: 30px;
+}
+
+.input-label {
+  display: inline;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #9a9a9a;
+  font-weight: 400;
+  padding-left: 15%;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0 15px;
+  height: 60px;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.copy-icon {
+  background: rgba(164, 164, 164, 0.13);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.copy-icon:focus,
+.copy-icon:hover {
+  background: #52a3ff;
+  box-shadow: 0 4px 14px rgba(40,80,220,0.10);
+}
+
+.copy-icon:active {
+  background: #323753;
+}
+
+.copy-icon[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.copy-img {
+  width: 1.42em;
+  height: 1.42em;
+  filter: brightness(1.1) drop-shadow(0 0 2px #191d2b);
+  display: block;
+}
+
+
+.converter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 300;
+  outline: none;
+  text-align: center;
+  padding: 0 10px;
+    width: 100%;
+}
+
+.converter-input::placeholder {
+  color: #666;
+  opacity: 0.7;
+}
+
+.rem-input {
+  color: #4a9eff;
+}
+
+.unit-label {
+  font-size: 16px;
+  color: #888;
+  margin-left: -140px;
+  font-weight: 400;
+}
+
+.converter-arrow {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #898989;
+  margin: 18px 0 18px 0;
+  cursor: pointer;
+  transition: color 0.18s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.converter-arrow:hover,
+.converter-arrow:focus {
+  color: #fff;
+}
+
+.converter-arrow:active {
+  color: #13ff56;
+}
+
+.converter-arrow[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 30px;
+}
+
+.root-size-input {
+  width: 36px;
+  background: none;
+  border: none;
+  color: #ddd;
+  font-size: inherit;
+  text-align: center;
+  border-bottom: 1px dashed #666;
+  margin: 0 3px;
+  outline: none;
+  opacity: 0.8;
+}
+.root-size-input::-webkit-outer-spin-button,
+.root-size-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.root-size-input:focus {
+  background: #222;
+  color: #4a9eff;
+}
+
+
+
+/* Conversion Table Styles */
+.conversion-table {
+  background: #2d2d2d;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.conversion-table h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.table-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.table-section {
+  flex: 1;
+}
+
+.table-section h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #cccccc;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #444;
+  font-size: 14px;
+}
+
+.table-row.header {
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 2px solid #666;
+}
+
+.table-row span {
+  color: #cccccc;
+}
+
+.converter-info {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.converter-info h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.converter-info p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .converter-wrapper {
+    padding: 10px;
+  }
+  
+  .table-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .converter-input {
+    font-size: 24px;
+  }
+  
+  .converter-title {
+    font-size: 24px;
+  }
+}
+
+/* Number input styling */
+.converter-input::-webkit-outer-spin-button,
+.converter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.converter-input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
