@@ -284,3 +284,18 @@ body {
   -moz-appearance: textfield;
   appearance: textfield;
 }
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.heart {
+  color: red;
+  display: inline;
+}
