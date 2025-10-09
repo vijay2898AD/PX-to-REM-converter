@@ -265,12 +265,81 @@ body {
   }
   
   .converter-input {
-    font-size: 24px;
+    font-size: 28px;
   }
   
   .converter-title {
     font-size: 24px;
   }
+
+  .converter-container {
+        padding: 20px; /* ADDED */
+    }
+}
+
+@media (max-width: 480px) { /* ADDED ENTIRE BLOCK BELOW */
+    .converter-wrapper {
+        padding: 5px;
+    }
+
+    .converter-container {
+        padding: 15px;
+    }
+
+    .converter-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .input-wrapper {
+        max-width: 90%;
+        padding: 0 10px;
+        height: 55px;
+    }
+
+    .input-label {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .converter-input {
+        font-size: 24px;
+        padding: 0 5px;
+    }
+
+    .unit-label {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .copy-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .converter-arrow {
+        font-size: 1.5rem;
+        margin: 15px auto;
+    }
+
+    .conversion-table h3 {
+        font-size: 16px;
+    }
+
+    .table-row {
+        font-size: 13px;
+        padding: 6px 0;
+    }
+
+    .converter-info h4 {
+        font-size: 15px;
+    }
+
+    .converter-info p,
+    footer p {
+        font-size: 13px;
+    }
 }
 
 /* Number input styling */
