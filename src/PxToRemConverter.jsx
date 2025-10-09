@@ -177,6 +177,10 @@ const handleSwap = () => {
           <p>REM is the newer unit, older browsers don't support it.</p>
         </div>
       </div>
+      <footer className="footer">
+        <p>© 2025 Px to Rem converter. All rights reserved.</p>
+        <p>Created with <p>&#10084;</p> by Vijay.</p>
+      </footer>
     </div>
   );
 }
