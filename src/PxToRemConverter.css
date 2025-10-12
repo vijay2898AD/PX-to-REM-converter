@@ -277,7 +277,7 @@ body {
     }
 }
 
-@media (max-width: 480px) { /* ADDED ENTIRE BLOCK BELOW */
+@media (max-width: 480px) { 
     .converter-wrapper {
         padding: 5px;
     }
