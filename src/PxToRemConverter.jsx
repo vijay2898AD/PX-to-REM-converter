@@ -98,7 +98,7 @@ const handleSwap = () => {
               type="number"
               value={px}
               onChange={handlePxChange}
-              className="converter-input"
+              className="converter-input px-input"
               placeholder="10"
               step = "0.1"
             />
