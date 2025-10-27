@@ -67,8 +67,8 @@ body {
 }
 
 .input-wrapper:focus-within {
-  border-color: #4a9eff; /* Change border to primary color */
-  box-shadow: 0 0 15px rgba(74, 158, 255, 0.4); /* Add blue glow */
+  border-color: #4a9eff; 
+  box-shadow: 0 0 15px rgba(74, 158, 255, 0.4); 
 }
 
 .copy-icon {
@@ -127,12 +127,12 @@ body {
 }
 
 .px-input {
-  color: #ffffff; /* A vibrant, neon red */
+  color: #ffffff; 
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 .rem-input {
-  color: #52a3ff; /* A slightly brighter, more electric blue */
+  color: #52a3ff; 
   text-shadow: 0 0 8px rgba(82, 163, 255, 0.4);
 }
 
@@ -202,8 +202,6 @@ body {
 }
 
 
-
-/* Conversion Table Styles */
 .conversion-table {
   background: #2d2d2d;
   border-radius: 12px;
@@ -255,10 +253,10 @@ body {
 }
 
 .table-row:not(.header):hover {
-  background-color: #383838; /* Darker highlight */
+  background-color: #383838; 
   border-radius: 4px;
   cursor: pointer;
-  transform: translateX(2px); /* Slight shift right */
+  transform: translateX(2px); 
   transition: background-color 0.2s, transform 0.1s;
 }
 
@@ -287,13 +285,12 @@ body {
 
 .converter-container,
 .conversion-table {
-  /* Existing box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); */
   box-shadow: 
-    0 8px 30px rgba(0, 0, 0, 0.5), /* Deep, blurred shadow */
-    0 0 10px rgba(0, 0, 0, 0.1) inset; /* Subtle inner shadow */
+    0 8px 30px rgba(0, 0, 0, 0.5), 
+    0 0 10px rgba(0, 0, 0, 0.1) inset;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .converter-wrapper {
     padding: 10px;
@@ -382,7 +379,7 @@ body {
     }
 }
 
-/* Number input styling */
+
 .converter-input::-webkit-outer-spin-button,
 .converter-input::-webkit-inner-spin-button {
   -webkit-appearance: none;

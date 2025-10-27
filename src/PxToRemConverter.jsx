@@ -48,27 +48,25 @@ function PxToRemConverter() {
 };
 
 const handleSwap = () => {
-        // 1. Capture current values
+        
         const currentPx = px;
         const currentRem = rem;
         
-        // 2. Determine the new 'source of truth' (lastEdited)
+        
         const newLastEdited = lastEdited === 'px' ? 'rem' : 'px';
         setLastEdited(newLastEdited);
 
-        // 3. Swap and RECALCULATE the newly derived field
+        
         if (newLastEdited === 'rem') {
-            setRem(currentPx); // Set new source (rem) to old px value
+            setRem(currentPx); 
             if (currentPx) {
-                // Recalculate the opposite field (px) based on the new rem source
                 setPx((Number(currentPx) * rootSize).toFixed(2));
             } else {
                 setPx("");
             }
-        } else { // newLastEdited === 'px'
-            setPx(currentRem); // Set new source (px) to old rem value
+        } else { 
+            setPx(currentRem); 
             if (currentRem) {
-                // Recalculate the opposite field (rem) based on the new px source
                 setRem((Number(currentRem) / rootSize).toFixed(3));
             } else {
                 setRem("");
@@ -153,7 +151,7 @@ const handleSwap = () => {
         </div>
       </div>
 
-      {/* Conversion Table */}
+      
       <div className="conversion-table">
         <h3>PX ↔ REM conversion tables</h3>
         <div className="table-container">
