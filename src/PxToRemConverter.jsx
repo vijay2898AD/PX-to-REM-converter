@@ -186,12 +186,12 @@ const handleSwap = () => {
 
         <div className="converter-info">
           <h4>Convert pixels to REM</h4>
-          <p>This calculator converts pixels to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#Rem" target="_blank" style={{color: "#708090"}}>CSS unit REM</a>. The conversion is based on the default font-size of 16 pixel, but can be changed.</p>
+          <p>This calculator converts pixels to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#Rem" target="_blank">CSS unit REM</a>. The conversion is based on the default font-size of 16 pixel, but can be changed.</p>
           <p>With the CSS rem unit you can define a size relative to the font-size of the HTML root tag.</p>
           <p>The conversion works of course in both directions, just change the opposite input field.</p>
           
           <h4>An example</h4>
-          <p>So if we take the default size as an example, than 1px represents 0.0625rem and, in the other direction, 1rem represents 16px.</p>
+          <p>So if we take the default size as an example, than <strong>1px represents 0.0625rem</strong> and, in the other direction, <strong>1rem represents 16px</strong>.</p>
           
           <h4>EM vs. REM: The differences</h4>
           <p>Inside a single document, the length of a REM unit is everywhere the same, it can just differ between documents. EM on the other side can differ between every element, because it is relative to the elements own font-size (exception is the font-size itself, in it EM is relative to the parent).</p>

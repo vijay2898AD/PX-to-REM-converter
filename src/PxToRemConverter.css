@@ -283,6 +283,11 @@ body {
   line-height: 1.5;
 }
 
+.converter-info a {
+  color: #4a9eff;
+  text-decoration: none;
+}
+
 .converter-container,
 .conversion-table {
   box-shadow: 
