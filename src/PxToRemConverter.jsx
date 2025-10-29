@@ -191,7 +191,7 @@ const handleSwap = () => {
           <p>The conversion works of course in both directions, just change the opposite input field.</p>
           
           <h4>An example</h4>
-          <p>So if we take the default size as an example, than <strong>1px represents 0.0625rem</strong> and, in the other direction, <strong>1rem represents 16px</strong>.</p>
+          <p>So if we take the default size as an example, then <strong>1px represents 0.0625rem</strong> and, in the other direction, <strong>1rem represents 16px</strong>.</p>
           
           <h4>EM vs. REM: The differences</h4>
           <p>Inside a single document, the length of a REM unit is everywhere the same, it can just differ between documents. EM on the other side can differ between every element, because it is relative to the elements own font-size (exception is the font-size itself, in it EM is relative to the parent).</p>
