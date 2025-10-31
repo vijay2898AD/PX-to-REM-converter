@@ -72,9 +72,9 @@ const handleSwap = () => {
                 setRem("");
             }
         }
-    };
+};
 
-  return (
+return (
     <div className="converter-wrapper">
       <div className="converter-container">
         <h1 className="converter-title">PX to REM converter</h1>
