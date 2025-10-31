@@ -41,13 +41,13 @@ function PxToRemConverter() {
   };
 
   const handleCopy = (value) => {
-  if (value !== "") {
-    navigator.clipboard.writeText(value.toString());
-    alert(`Copied ${value} to clipboard!`);
-  }
-};
+    if (value !== "") {
+      navigator.clipboard.writeText(value.toString());
+      alert(`Copied ${value} to clipboard!`);
+    }
+  };
 
-const handleSwap = () => {
+  const handleSwap = () => {
         
         const currentPx = px;
         const currentRem = rem;
@@ -72,7 +72,7 @@ const handleSwap = () => {
                 setRem("");
             }
         }
-};
+  };
 
 return (
     <div className="converter-wrapper">
@@ -109,7 +109,7 @@ return (
           className="converter-arrow"
           onClick={handleSwap}
           aria-label="Swap values"
-          title="Swap pixels with rem"
+          title= "Swap values"
         >
         ↑↓
         </button>
@@ -153,7 +153,7 @@ return (
 
       
       <div className="conversion-table">
-        <h3>PX ↔ REM conversion tables</h3>
+        <h2>PX ↔ REM conversion tables</h2>
         <div className="table-container">
           <div className="table-section">
             <h4>Pixels → REM</h4>
